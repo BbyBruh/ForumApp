@@ -2,10 +2,23 @@ using RepositoryContracts;
 
 namespace CLI.UI;
 
-public record CliApp(IUser userRep, IComment commentRep, IPost postRep)
+public class CliApp
 {
+    private readonly IComment commentRepository;
+    private readonly IUser userRepository;
+    private readonly IPost postRepository;
+
+    public CliApp(IUser userRepository, IComment commentRepository,  IPost postRepository)
+    {
+        this.userRepository = userRepository;
+        this.commentRepository = commentRepository;
+        this.postRepository = postRepository;
+    }
+    
     public async Task StartAsync()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("CliApp starting..");
+        
+        
     }
 }
