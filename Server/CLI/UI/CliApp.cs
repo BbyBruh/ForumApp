@@ -18,7 +18,44 @@ public class CliApp
     public async Task StartAsync()
     {
         Console.WriteLine("CliApp starting..");
-        
-        
+
+        while (true)
+        {
+            Console.Write("> ");
+            string? input = Console.ReadLine();
+            
+            if (string.IsNullOrWhiteSpace(input))
+                continue;
+            
+            if (input.StartsWith("help", StringComparison.OrdinalIgnoreCase))
+            {
+                PrintCommands();
+                continue;
+            }
+            
+            
+        }
+    }
+
+    private void PrintCommands()
+    {
+        Console.WriteLine("CliApp commands:");
+        Console.WriteLine("help             opens this command:");
+        Console.WriteLine("------------------------");
+        Console.WriteLine("user             opens user menu"); //TODO implement user menu
+        Console.WriteLine("------------------------");
+        Console.WriteLine("post             opens post menu"); //TODO implement post menu
+        Console.WriteLine("------------------------");
+        Console.WriteLine("comment          opens comment menu"); //TODO implement comment menu
+        Console.WriteLine("------------------------");
+        Console.WriteLine("more             opens detailed menu");
+    }
+
+    private void MoreCommands()
+    {
+        Console.WriteLine("CliApp more commands:");
+        Console.WriteLine("userHelp                opens user specific commands");
+        Console.WriteLine("postHelp                opens post specific commands");
+        Console.WriteLine("commentHelp             opens comment specific commands");
     }
 }

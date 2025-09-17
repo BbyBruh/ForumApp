@@ -8,22 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/AppreciationView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/BrowseCommentsView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ManageCommentView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/AppreciationPostView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/BrowsePostsView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/SinglePostView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ManageUserView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Comment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Post.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +119,7 @@
       <workItem from="1757678639155" duration="940000" />
       <workItem from="1757686283950" duration="3347000" />
       <workItem from="1757946369996" duration="673000" />
-      <workItem from="1758084428370" duration="6689000" />
+      <workItem from="1758084428370" duration="8063000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />
@@ -152,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758113153204</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created classes (sketching layout)">
+      <option name="closed" value="true" />
+      <created>1758123822945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758123822945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +168,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Tutorial done (no extras)" />
     <MESSAGE value="modified public string? Body { get; set; }" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified public string? Body { get; set; }" />
+    <MESSAGE value="created classes (sketching layout)" />
+    <option name="LAST_COMMIT_MESSAGE" value="created classes (sketching layout)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
