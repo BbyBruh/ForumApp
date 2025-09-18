@@ -34,7 +34,6 @@ public class CliApp
             if (input.StartsWith("help", StringComparison.OrdinalIgnoreCase))
             {
                 PrintCommands();
-                continue;
             }
 
             if (input.StartsWith("user add", StringComparison.OrdinalIgnoreCase))
@@ -45,7 +44,6 @@ public class CliApp
                 if (inputs.Length < 2)
                 {
                     Console.WriteLine("You must provide a username and password.");
-                    continue;
                 }
                 
                 string username = inputs[0];
