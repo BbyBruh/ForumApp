@@ -8,9 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/CLI/CLI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +132,7 @@
       <workItem from="1757686283950" duration="3347000" />
       <workItem from="1757946369996" duration="673000" />
       <workItem from="1758084428370" duration="9250000" />
-      <workItem from="1758179128801" duration="1287000" />
+      <workItem from="1758179128801" duration="1747000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />
@@ -169,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758125209353</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CLI.csproj missing, added.&#10;Program.cs missing, added.&#10;&#10;Debbuged a bit, deleted &quot;continue&quot; after the if statements.">
+      <option name="closed" value="true" />
+      <created>1758180660542</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758180660542</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +199,8 @@
     <MESSAGE value="modified public string? Body { get; set; }" />
     <MESSAGE value="created classes (sketching layout)" />
     <MESSAGE value="made command list" />
-    <option name="LAST_COMMIT_MESSAGE" value="made command list" />
+    <MESSAGE value="CLI.csproj missing, added.&#10;Program.cs missing, added.&#10;&#10;Debbuged a bit, deleted &quot;continue&quot; after the if statements." />
+    <option name="LAST_COMMIT_MESSAGE" value="CLI.csproj missing, added.&#10;Program.cs missing, added.&#10;&#10;Debbuged a bit, deleted &quot;continue&quot; after the if statements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
