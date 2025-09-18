@@ -24,35 +24,75 @@ public class CliApp
 
         while (true)
         {
-            Console.Write("> ");
-            string? input = Console.ReadLine();
+            Console.WriteLine("> ");
+            string input = Console.ReadLine();
             
             if (string.IsNullOrWhiteSpace(input))
                 break;
-            
-            if (input.StartsWith("help", StringComparison.OrdinalIgnoreCase))
-            {
-                PrintCommands();
-            }
 
+            // ************* ADD: 
             
-            if (input.StartsWith("user add", StringComparison.OrdinalIgnoreCase))
+            if (input.StartsWith("add ", StringComparison.OrdinalIgnoreCase))
             {
-                string[]  inputs = input.Substring("user add".Length).Split(' ', 2, 
+                string[]  inputs = input.Substring("add".Length).Split(' ',  
                     StringSplitOptions.RemoveEmptyEntries);
             
-                if (inputs.Length < 2)
+                string query = inputs[0];
+                switch (query.ToLower())
                 {
-                    Console.WriteLine("You must provide a username and password.");
+                    case "user":
+                        if (inputs.Length < 2 || inputs.Length > 3)
+                        {
+                            Console.WriteLine("Command format is: add user + name + password");
+                        }
+                        else
+                        {
+                            string username = inputs[1];
+                            string password = inputs[2];
+                            await userRepository.AddAsyncUser(new User { Username = username, Password = password });
+                            CreateUserView.ShowUserCreated(username, password);
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("Unknown command");
+                        break;
                 }
-                
-                string username = inputs[0];
-                string password = inputs[1];
-            
-                await userRepository.AddAsyncUser(new User { Username = username, Password = password });
-                CreateUserView.ShowUserCreated(username, password); //not doing anything?
             } 
+           
+            // ************* SHOW:
+
+            if (input.StartsWith("list ", StringComparison.OrdinalIgnoreCase))
+            {
+                string[] inputs = input.Substring("list".Length).Split(' ', 
+                    StringSplitOptions.RemoveEmptyEntries);
+                if (inputs.Length > 2)
+                {
+                    Console.WriteLine("Command format is: list users/comments/posts");
+                }
+                string query = inputs[0];
+
+                switch (query.ToLower())
+                {
+                    case "users":
+                        var allUsers = userRepository.GeManyAsyncUsers();
+
+                        if (!allUsers.Any())
+                        {
+                            Console.WriteLine("No users found");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Users found: ");
+                            foreach (var user in allUsers)
+                            { 
+                                Console.WriteLine($"{user.Username} - id: {user.Id}, {(user.IsModerator? "MOD" : " ")}" );
+                            }
+                        }
+                        break;
+                }
+            }
             
+            // ************* ADD: 
             
         }
     }
@@ -69,13 +109,5 @@ public class CliApp
         Console.WriteLine("comment          opens comment menu"); 
         Console.WriteLine("------------------------");
         Console.WriteLine("more             opens detailed menu");
-    }
-
-    private void MoreCommands()
-    {
-        Console.WriteLine("CliApp more commands:");
-        Console.WriteLine("userHelp                opens user specific commands");
-        Console.WriteLine("postHelp                opens post specific commands");
-        Console.WriteLine("commentHelp             opens comment specific commands");
     }
 }

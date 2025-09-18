@@ -8,9 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +44,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/56b895832ba1dd5dcf6eab77be40a0537da9d1bf60cfbac19515378f1ac9ca13/Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Entities/Comment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Entities/Post.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lsuga/RiderProjects/ForumApp/Server/CLI/UI/CliApp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageComments/AppreciationView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageComments/BrowseCommentsView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManagePosts/SinglePostView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ManageUserView.cs" root0="FORCE_HIGHLIGHTING" />
