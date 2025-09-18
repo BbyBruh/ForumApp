@@ -10,7 +10,6 @@ public class CliApp
     private readonly IComment commentRepository;
     private readonly IUser userRepository;
     private readonly IPost postRepository;
-    private CreateUserView? createUserView;
 
     public CliApp(IUser userRepository, IComment commentRepository,  IPost postRepository)
     {
@@ -29,31 +28,30 @@ public class CliApp
             string? input = Console.ReadLine();
             
             if (string.IsNullOrWhiteSpace(input))
-                continue;
+                break;
             
             if (input.StartsWith("help", StringComparison.OrdinalIgnoreCase))
             {
                 PrintCommands();
-                continue;
             }
 
+            
             if (input.StartsWith("user add", StringComparison.OrdinalIgnoreCase))
             {
                 string[]  inputs = input.Substring("user add".Length).Split(' ', 2, 
                     StringSplitOptions.RemoveEmptyEntries);
-
+            
                 if (inputs.Length < 2)
                 {
                     Console.WriteLine("You must provide a username and password.");
-                    continue;
                 }
                 
                 string username = inputs[0];
                 string password = inputs[1];
-
+            
                 await userRepository.AddAsyncUser(new User { Username = username, Password = password });
-                createUserView?.ShowUserCreated(username, password); //not doing anything?
-            } //TODO fix this bs
+                CreateUserView.ShowUserCreated(username, password); //not doing anything?
+            } 
             
             
         }
@@ -64,11 +62,11 @@ public class CliApp
         Console.WriteLine("CliApp commands:");
         Console.WriteLine("help             opens this command:");
         Console.WriteLine("------------------------");
-        Console.WriteLine("user             opens user menu"); //TODO implement user menu
+        Console.WriteLine("user             opens user menu"); 
         Console.WriteLine("------------------------");
-        Console.WriteLine("post             opens post menu"); //TODO implement post menu
+        Console.WriteLine("post             opens post menu"); 
         Console.WriteLine("------------------------");
-        Console.WriteLine("comment          opens comment menu"); //TODO implement comment menu
+        Console.WriteLine("comment          opens comment menu"); 
         Console.WriteLine("------------------------");
         Console.WriteLine("more             opens detailed menu");
     }
