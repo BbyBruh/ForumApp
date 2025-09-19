@@ -46,6 +46,15 @@ public class UserInMemoryRepository : IUser
         }
         return Task.FromResult(user);
     }
+    public Task<int> GetSingleAsyncUsername(string username)
+    {
+        User user = users.SingleOrDefault(p => p.Username == username);
+        if (user is null)
+        {
+            throw new InvalidOperationException($"User with username '{username}' not found");
+        }
+        return Task.FromResult(user.Id);
+    }
 
     public IQueryable<User> GeManyAsyncUsers()
     {

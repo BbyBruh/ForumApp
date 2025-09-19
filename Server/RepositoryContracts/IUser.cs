@@ -9,4 +9,5 @@ public interface IUser
     Task DeleteAsyncUser(int id);
     Task<User> GetSingleAsyncUser(int id);
     IQueryable<User> GeManyAsyncUsers();
+    public Task<int> GetSingleAsyncUsername(string username);
 }

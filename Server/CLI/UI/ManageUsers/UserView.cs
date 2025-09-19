@@ -7,4 +7,9 @@ public static class UserView
         Console.WriteLine($"Successfully created username:" +
                           $" {username} with password: {password}");
     }
+
+    public static void ShowUser(string username)
+    {
+        
+    }
 }

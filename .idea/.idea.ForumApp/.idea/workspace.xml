@@ -10,18 +10,9 @@
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/AppreciationView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CommentView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/BrowseCommentsView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ManageCommentView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/AppreciationPostView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/BrowsePostsView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/PostView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/SinglePostView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ManageUserView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/InMemoryRepositories/UserInMemoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/InMemoryRepositories/UserInMemoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/RepositoryContracts/IUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/RepositoryContracts/IUser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +39,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/BbyBruh/ForumApp.git",
-    "accountId": "acffacb1-663b-4322-a8e3-dcf1c182935f"
+    "accountId": "b5299daa-19c6-4157-8311-7175751de5c4"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
@@ -84,24 +75,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.CLI.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.CLI.executor": "Run",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "school-laptop",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="CLI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -141,6 +132,7 @@
       <workItem from="1758179128801" duration="1907000" />
       <workItem from="1758187435345" duration="516000" />
       <workItem from="1758218384954" duration="768000" />
+      <workItem from="1758263203104" duration="2346000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />

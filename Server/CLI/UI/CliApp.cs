@@ -3,6 +3,7 @@ using CLI.UI.ManageComments;
 using CLI.UI.ManagePosts;
 using CLI.UI.ManageUsers;
 using Entities;
+using Microsoft.VisualBasic.CompilerServices;
 using RepositoryContracts;
 
 namespace CLI.UI;
@@ -56,28 +57,49 @@ public class CliApp
                         }
                         break;
                     case "post":
-                        if (inputs.Length < 2 || inputs.Length > 3)
+                        if (inputs.Length > 3)
                         {
-                            Console.WriteLine("Command format is: add post + title + body");
+                            Console.WriteLine("Command format is: add post + user id");
                         }
                         else
                         {
-                            string title = inputs[1];
-                            string body = inputs[2];
-                            await postRepository.AddAsyncPost(new Post { Title = title, Body = body });
-                            PostView.ShowPostCreated(title, body);
+                            string userID = inputs[1];
+                            
+                            int id = IntegerType.FromString(userID);
+                            
+                            Console.WriteLine("Title: ");
+                            string title = Console.ReadLine();
+                            Console.WriteLine("Content: ");
+                            string content = Console.ReadLine();
+
+                            await postRepository.AddAsyncPost(new Post
+                                { Title = title, Body = content, UserId = id });
+                            PostView.ShowPostCreated(title, content);
+
                         }
                         break;
                     case "comment":
-                        if (inputs.Length > 2)
+                        if (inputs.Length > 3)
                         {
-                            Console.WriteLine("Command format is: add comment + body");
+                            Console.WriteLine("Command format is: add comment + user id");
                         }
                         else
                         {
-                            string comment = inputs[1];
-                            await commentRepository.AddAsyncComment(new Comment { Content = comment });
-                            CommentView.ShowCommentCreated(comment);
+                            string userID = inputs[1];
+                            
+                            int id = IntegerType.FromString(userID);
+                            Console.WriteLine("Post id: ");
+                            string postIdString = Console.ReadLine();
+                            int postID = IntegerType.FromString(postIdString);
+                            
+                            Console.WriteLine("Content: ");
+                            string content = Console.ReadLine();
+
+                            await commentRepository.AddAsyncComment(new Comment
+                            {
+                                Content = content, UserId = id, PostId = postID
+                            });
+
                         }
                         break;
                     default:
