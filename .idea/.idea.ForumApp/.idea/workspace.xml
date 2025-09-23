@@ -8,10 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CommentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CommentView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/PostView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/PostView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +130,7 @@
       <workItem from="1758179128801" duration="1907000" />
       <workItem from="1758187435345" duration="516000" />
       <workItem from="1758218384954" duration="984000" />
-      <workItem from="1758627426687" duration="964000" />
+      <workItem from="1758627426687" duration="1568000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />
@@ -198,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758219364866</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Sorted all cases from CliApp.cs into their respective views">
+      <option name="closed" value="true" />
+      <created>1758628423002</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758628423002</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +233,8 @@
     <MESSAGE value="change if statement for switch" />
     <MESSAGE value="integrated switch st w if clauses. After the complex switch (add, show, delete ??) have a switch for command list (help, default). &#10;&#10;can add user and view all users. &#10;&#10;TODO: clean all the junk directories. You dont ned that many" />
     <MESSAGE value="cleaned up, just figure out how to become user" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up, just figure out how to become user" />
+    <MESSAGE value="Sorted all cases from CliApp.cs into their respective views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorted all cases from CliApp.cs into their respective views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

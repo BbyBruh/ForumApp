@@ -33,7 +33,7 @@ public class UserView
             Console.WriteLine("Users found: ");
             foreach (var user in allUsers)
             { 
-                Console.WriteLine($"{user.Username} - id: {user.Id}, {(user.IsModerator? "MOD" : " ")}" );
+                Console.WriteLine($"{user.Username} - id: {user.Id} {(user.IsModerator? ", is MOD" : " ")}" );
             }
         }
     }

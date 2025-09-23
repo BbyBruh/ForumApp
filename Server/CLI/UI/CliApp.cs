@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using CLI.UI.ManageComments;
 using CLI.UI.ManagePosts;
+using CLI.UI.ManageUniversal;
 using CLI.UI.ManageUsers;
 using Entities;
 using RepositoryContracts;
@@ -23,10 +24,11 @@ public class CliApp
     public async Task StartAsync()
     {
         Console.WriteLine("CliApp starting..");
+        CommandsView.PrintCommands();
 
         while (true)
         {
-            Console.WriteLine("> ");
+            Console.Write("> ");
             string input = Console.ReadLine();
             
             if (string.IsNullOrWhiteSpace(input))
@@ -86,22 +88,11 @@ public class CliApp
                 }
             }
             
-            // ************* ADD: 
-            
-        }
-    }
 
-    private void PrintCommands()
-    {
-        Console.WriteLine("CliApp commands:");
-        Console.WriteLine("help             opens this command:");
-        Console.WriteLine("------------------------");
-        Console.WriteLine("user             opens user menu"); 
-        Console.WriteLine("------------------------");
-        Console.WriteLine("post             opens post menu"); 
-        Console.WriteLine("------------------------");
-        Console.WriteLine("comment          opens comment menu"); 
-        Console.WriteLine("------------------------");
-        Console.WriteLine("more             opens detailed menu");
+            if (input.StartsWith("help", StringComparison.OrdinalIgnoreCase))
+            {
+                CommandsView.PrintCommands();
+            }
+        }
     }
 }
