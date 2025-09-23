@@ -10,18 +10,9 @@
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/AppreciationView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CommentView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/BrowseCommentsView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ManageCommentView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/AppreciationPostView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/BrowsePostsView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/PostView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/SinglePostView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ManageUserView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CommentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CommentView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/PostView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/PostView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +36,12 @@
     &quot;assignee&quot;: &quot;BbyBruh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BbyBruh/ForumApp.git",
-    "accountId": "acffacb1-663b-4322-a8e3-dcf1c182935f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BbyBruh/ForumApp.git&quot;,
+    &quot;accountId&quot;: &quot;acffacb1-663b-4322-a8e3-dcf1c182935f&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/56b895832ba1dd5dcf6eab77be40a0537da9d1bf60cfbac19515378f1ac9ca13/Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Entities/Comment.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,7 +63,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -140,7 +131,8 @@
       <workItem from="1758084428370" duration="9250000" />
       <workItem from="1758179128801" duration="1907000" />
       <workItem from="1758187435345" duration="516000" />
-      <workItem from="1758218384954" duration="768000" />
+      <workItem from="1758218384954" duration="984000" />
+      <workItem from="1758627426687" duration="964000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />
@@ -198,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758207592302</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cleaned up, just figure out how to become user">
+      <option name="closed" value="true" />
+      <created>1758219364866</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758219364866</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +226,8 @@
     <MESSAGE value="CLI.csproj missing, added.&#10;Program.cs missing, added.&#10;&#10;Debbuged a bit, deleted &quot;continue&quot; after the if statements." />
     <MESSAGE value="change if statement for switch" />
     <MESSAGE value="integrated switch st w if clauses. After the complex switch (add, show, delete ??) have a switch for command list (help, default). &#10;&#10;can add user and view all users. &#10;&#10;TODO: clean all the junk directories. You dont ned that many" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrated switch st w if clauses. After the complex switch (add, show, delete ??) have a switch for command list (help, default). &#10;&#10;can add user and view all users. &#10;&#10;TODO: clean all the junk directories. You dont ned that many" />
+    <MESSAGE value="cleaned up, just figure out how to become user" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up, just figure out how to become user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

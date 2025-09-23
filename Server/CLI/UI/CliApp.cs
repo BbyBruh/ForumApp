@@ -43,42 +43,13 @@ public class CliApp
                 switch (query.ToLower())
                 {
                     case "user":
-                        if (inputs.Length < 2 || inputs.Length > 3)
-                        {
-                            Console.WriteLine("Command format is: add user + name + password");
-                        }
-                        else
-                        {
-                            string username = inputs[1];
-                            string password = inputs[2];
-                            await userRepository.AddAsyncUser(new User { Username = username, Password = password });
-                            UserView.ShowUserCreated(username, password);
-                        }
+                        UserView.AddUser(inputs, userRepository);
                         break;
                     case "post":
-                        if (inputs.Length < 2 || inputs.Length > 3)
-                        {
-                            Console.WriteLine("Command format is: add post + title + body");
-                        }
-                        else
-                        {
-                            string title = inputs[1];
-                            string body = inputs[2];
-                            await postRepository.AddAsyncPost(new Post { Title = title, Body = body });
-                            PostView.ShowPostCreated(title, body);
-                        }
+                        PostView.AddPost(inputs, postRepository);
                         break;
                     case "comment":
-                        if (inputs.Length > 2)
-                        {
-                            Console.WriteLine("Command format is: add comment + body");
-                        }
-                        else
-                        {
-                            string comment = inputs[1];
-                            await commentRepository.AddAsyncComment(new Comment { Content = comment });
-                            CommentView.ShowCommentCreated(comment);
-                        }
+                        CommentView.AddComment(inputs, commentRepository);
                         break;
                     default:
                         Console.WriteLine("Unknown command, you can only add user/comment/post");
@@ -101,52 +72,13 @@ public class CliApp
                 switch (query.ToLower())
                 {
                     case "users":
-                        var allUsers = userRepository.GeManyAsyncUsers();
-
-                        if (!allUsers.Any())
-                        {
-                            Console.WriteLine("No users found");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Users found: ");
-                            foreach (var user in allUsers)
-                            { 
-                                Console.WriteLine($"{user.Username} - id: {user.Id}, {(user.IsModerator? "MOD" : " ")}" );
-                            }
-                        }
+                        UserView.ListUsers(inputs, userRepository);
                         break;
                     case "posts":
-                        var allPosts = postRepository.GeManyAsyncPosts();
-
-                        if (!allPosts.Any())
-                        {
-                            Console.WriteLine("No posts found");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Posts found: ");
-                            foreach (var post in allPosts)
-                            { 
-                                Console.WriteLine($"{post.Id} : {post.Title} - {post.Body}" );
-                            }
-                        }
+                       PostView.ListPosts(inputs, postRepository);
                         break;
                     case "comments":
-                        var allComments = commentRepository.GeManyAsyncComments();
-
-                        if (!allComments.Any())
-                        {
-                            Console.WriteLine("No comments found");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Comments found: ");
-                            foreach (var comment in allComments)
-                            { 
-                                Console.WriteLine($"{comment.Content}" );
-                            }
-                        }
+                        CommentView.ListComments(inputs, commentRepository);
                         break;
                     default:
                         Console.WriteLine("Unknown command, you can only list users/comments/posts");
