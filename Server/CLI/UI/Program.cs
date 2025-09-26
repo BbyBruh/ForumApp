@@ -1,13 +1,12 @@
 using CLI.UI;
 using Entities;
-using InMemoryRepositories;
-using InMemoryRepositories;
+using FileRepositories;
 using RepositoryContracts;
 
 Console.WriteLine("Starting CLI app...");
-IUser userRepository = new UserInMemoryRepository();
-IComment commentRepository = new CommentInMemoryRepository();
-IPost postRepository = new PostInMemoryRepository();
+IUser userRepository = new UserFileRepository();
+IComment commentRepository = new CommentFileRepository();
+IPost postRepository = new PostFileRepository();
 
 // *******************************************
 //          DUMMY DATA

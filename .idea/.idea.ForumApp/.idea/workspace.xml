@@ -8,9 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/FileRepositories/CommentFileRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/FileRepositories/PostFileRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/FileRepositories/UserFileRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForumApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ForumApp.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,9 @@
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageUniversal/CommandsView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/ManageUsers/UserView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/CLI/UI/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/FileRepositories/CommentFileRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/FileRepositories/PostFileRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/FileRepositories/UserFileRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/InMemoryRepositories/CommentInMemoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/InMemoryRepositories/PostInMemoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/InMemoryRepositories/UserInMemoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -130,7 +135,8 @@
       <workItem from="1758179128801" duration="1907000" />
       <workItem from="1758187435345" duration="516000" />
       <workItem from="1758218384954" duration="984000" />
-      <workItem from="1758627426687" duration="1568000" />
+      <workItem from="1758627426687" duration="1621000" />
+      <workItem from="1758876774854" duration="3707000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />
@@ -204,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758628423002</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Cleaned a bit more. TODO: connect the posts, comments in view">
+      <option name="closed" value="true" />
+      <created>1758629045897</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758629045897</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +248,8 @@
     <MESSAGE value="integrated switch st w if clauses. After the complex switch (add, show, delete ??) have a switch for command list (help, default). &#10;&#10;can add user and view all users. &#10;&#10;TODO: clean all the junk directories. You dont ned that many" />
     <MESSAGE value="cleaned up, just figure out how to become user" />
     <MESSAGE value="Sorted all cases from CliApp.cs into their respective views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorted all cases from CliApp.cs into their respective views" />
+    <MESSAGE value="Cleaned a bit more. TODO: connect the posts, comments in view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned a bit more. TODO: connect the posts, comments in view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
