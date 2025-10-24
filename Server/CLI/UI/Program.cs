@@ -7,7 +7,7 @@ Console.WriteLine("Starting CLI app...");
 IUser userRepository = new UserFileRepository();
 IComment commentRepository = new CommentFileRepository();
 IPost postRepository = new PostFileRepository();
-
+    
 // *******************************************
 //          DUMMY DATA
 //********************************************

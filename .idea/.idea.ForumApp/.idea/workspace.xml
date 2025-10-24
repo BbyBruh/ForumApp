@@ -10,7 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa72a08-d466-4cd1-b22e-9c8561d6e2b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ForumApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ForumApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ForumApp.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/CLI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/CLI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/WebAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +67,7 @@
     <setting file="file://$PROJECT_DIR$/Server/RepositoryContracts/IComment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/RepositoryContracts/IPost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/RepositoryContracts/IUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/WebAPI/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -171,7 +178,10 @@
       <workItem from="1759405056849" duration="19000" />
       <workItem from="1759405132887" duration="1665000" />
       <workItem from="1759501559319" duration="12000" />
-      <workItem from="1759829906220" duration="1477000" />
+      <workItem from="1759829906220" duration="3982000" />
+      <workItem from="1759837941773" duration="10000" />
+      <workItem from="1761031633973" duration="1749000" />
+      <workItem from="1761044428355" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="Tutorial done (no extras)">
       <option name="closed" value="true" />
@@ -269,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759830398465</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="WebAPI added">
+      <option name="closed" value="true" />
+      <created>1759831410050</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1759831410050</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +320,8 @@
     <MESSAGE value="Cleaned a bit more. TODO: connect the posts, comments in view" />
     <MESSAGE value="Assignment 3: File persistence" />
     <MESSAGE value="Put the ApiContracts.csproj (DTOs) under  version control." />
-    <option name="LAST_COMMIT_MESSAGE" value="Put the ApiContracts.csproj (DTOs) under  version control." />
+    <MESSAGE value="WebAPI added" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebAPI added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
